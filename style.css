@@ -119,7 +119,7 @@ nav li a{
 
     body{
         overflow-x: hidden;
-        display: none
+        overflow-y: hidden;
     }
 
     .nav-list{
