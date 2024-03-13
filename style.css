@@ -118,8 +118,7 @@ nav li a{
 @media (max-width:440px){
 
     body{
-        overflow-x: hidden;
-        overflow-y: hidden;
+        
     }
 
     .nav-list{
