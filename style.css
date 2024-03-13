@@ -44,7 +44,7 @@ nav{
 
 .nav-list li:hover{
     background-color: aquamarine;
-}
+}/*Quando passar o mouse por cima acontece algum efeito*/  
 
 .nav-list li{
     letter-spacing: 3px;
@@ -119,6 +119,7 @@ nav li a{
 
     body{
         overflow-x: hidden;
+        display: none
     }
 
     .nav-list{
