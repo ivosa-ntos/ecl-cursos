@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link REL="SHORTCUT ICON" HREF="img/icons8-aprendizagem-96.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Aqui vou colocar a logo e o menu. Vou depois adaptar para diferentes dispositivos.-->
+    <!--Pc: Vou fazer um dropdown menu-->
+    <!--Restantes dispositivos: Quero um btn clicavel onde depois do clique aparecem opcoes-->
+    
+    <div class="cabecalho">
+        <div class="menu">
+            <nav>
+                <img class="logo" src="img/novo_logo_ecl_2020-1400x596 (1).png" alt="">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <a href="">Cursos públicos</a>
+                        <div class="dropdown-menu">
+                            <a href="">teste1</a>
+                            <a href="">teste2</a>
+                            <a href="">teste3</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">Cursos privados</a>
+                        <div class="dropdown-menu">
+                            <a href="">teste4</a>
+                            <a href="">teste5</a>
+                            <a href="">teste6</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">Cursos de aprendizagens</a>
+                        <div class="dropdown-menu">
+                            <a href="">teste7</a>
+                            <a href="">teste8</a>
+                        </div>
+                    </li>
+                    <li class="dropdown" id="dropdown-sobre"><a href="">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script src="mobile-navbar.js"></script>
+</body>
+</html>
