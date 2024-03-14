@@ -63,6 +63,8 @@ nav li a{
     display: inline-block;
 }
 
+
+
 /*Dropdown menu apenas para pc(monitor)*/
 
 .dropdown{
@@ -126,14 +128,9 @@ nav li a{
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 30vh;
-        height: 92vh;
-        background-color: whitesmoke;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);/*Com isto a navegação foi para fora do body*/
-        transition: transform 0.3s ease-in;
     }
 
     .nav-list li{
