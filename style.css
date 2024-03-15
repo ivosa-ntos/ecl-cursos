@@ -39,11 +39,13 @@ nav{
     list-style: none;
     display: flex;
     border: transparent solid 3px;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .nav-list li:hover{
-    background-color: aquamarine;
+    background-color: rgb(227, 240, 236);
 }/*Quando passar o mouse por cima acontece algum efeito*/  
 
 .nav-list li{
@@ -62,6 +64,7 @@ nav li{
 nav li a{
     display: inline-block;
     text-decoration: none;
+    color: #45777a;
 }
 
 
@@ -71,7 +74,7 @@ nav li a{
 .dropdown{
     border: transparent solid 2px;
     width: 150px;
-    
+    margin-top: 5px;
 
 }
 
@@ -92,50 +95,121 @@ nav li a{
     
 }
 
+.dropdown-menu a:hover{
+    background-color: rgb(227, 240, 236);
+}
+
 .dropdown:hover .dropdown-menu{
     display: block;
 }
 
 #dropdown-sobre{
-    border: black 3px solid;
+    border: transparent 3px solid;
     margin-top: 7px;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}/*Isto é apenas para moficar o sobre nos*/
 
 /*Termina aqui o dropdown menu*/
 
 /*Aqui comeca a personalização do body*/
 
 .container{
-    border: red solid 3px;
+    border: transparent solid 3px;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+
+}/*DIV pai*/
+
+
+/*Aqui mexo nos "filhos" os profissionais*/
+
+.container-title{
+    text-align: center;
+    padding: 10px;
+
 }
 
 .container-profissionais{
-    border: blue 3px solid;
+    border: transparent 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .container-profissionais-mod{
-    border: orange 3px solid;
+    border: transparent 3px solid;
     width: 355px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5px;
+
 }
 
 .container-profissionais-mod img{
     width: 350px;
-}
+    height: 270px;
+}/*mexer imagem aqui*/
 
 .container-profissionais-mod h2{
     z-index: 99;
     position: absolute;
+    text-align: center;
+    color: whitesmoke;
+    pointer-events: none;
+    
+}/*Aqui mexe no h2 qur esta por cima da imagem*/
+
+/*Aqui paro de mexer nos profissionais.*/
+
+/*Aqui mexo individualmente em cada curso*/
+.container-itens{
+    position: absolute;
+    border: transparent 5px solid;
+    width: 350px;
+    height: 270px;
+    opacity: 0.3;
+    transition: opacity 0.5s ease; /* Transição suave para a opacidade */
+    
 }
 
+.container-itens:hover {
+    opacity: 0.7; /* Opacidade aumentada quando passa o mouse */
+}
+/*Termina aqui*/
+
+/*Aqui comeca os cursos de aprendizagensa */
+
 .container-aprendizagens{
-    border: yellow 3px solid;
+    border: transparent 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-aprendizagens-mod{
+    border: transparent 3px solid;
+    width: 355px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.container-aprendizagens-mod img{
+    width: 350px;
+    height: 270px;
+}
+
+.container-aprendizagens-mod h2{
+    z-index: 99;
+    position: absolute;
+    text-align: center;
+    color: whitesmoke;
+    pointer-events: none;
 }
 
 /*Botao do menu para todos os dispositivos excluindo para os Pc */
@@ -179,10 +253,6 @@ nav li a{
 
     .mobile-menu{
         display: block;
-    }
-
-    .nav-list.active{
-        transform: translateX(0);
     }
 
     @keyframes navLinkFade{
