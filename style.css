@@ -61,6 +61,7 @@ nav li{
 
 nav li a{
     display: inline-block;
+    text-decoration: none;
 }
 
 
@@ -70,6 +71,7 @@ nav li a{
 .dropdown{
     border: transparent solid 2px;
     width: 150px;
+    
 
 }
 
@@ -86,6 +88,7 @@ nav li a{
     display: block;
     padding: 10px;
     border: 1px transparent solid;
+    text-decoration: none;
     
 }
 
@@ -99,6 +102,24 @@ nav li a{
 }
 
 /*Termina aqui o dropdown menu*/
+
+/*Aqui comeca a personalização do body*/
+
+.container{
+    border: red solid 3px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-profissionais{
+    border: blue 3px solid;
+}
+
+.container-aprendizagens{
+    border: yellow 3px solid;
+}
 
 /*Botao do menu para todos os dispositivos excluindo para os Pc */
 .mobile-menu{
@@ -115,6 +136,7 @@ nav li a{
 
 }
 /*Aqui termina o botao do menu*/
+
 
 /*Aqui comeca a parte para telemoveis*/
 @media (max-width:440px){
