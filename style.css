@@ -117,6 +117,23 @@ nav li a{
     border: blue 3px solid;
 }
 
+.container-profissionais-mod{
+    border: orange 3px solid;
+    width: 355px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-profissionais-mod img{
+    width: 350px;
+}
+
+.container-profissionais-mod h2{
+    z-index: 99;
+    position: absolute;
+}
+
 .container-aprendizagens{
     border: yellow 3px solid;
 }
@@ -182,4 +199,37 @@ nav li a{
     .dropdown:hover .dropdown-menu{
         display: none;
     }/*Isto remove o dropdown menu feito  para pc*/
+
+    /*Personalizar botao do menu*/
+    .btn-mobile{
+        border: 3px  solid black;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-mobile button{
+        border: none;
+        background-color: whitesmoke;
+        text-decoration: none;
+        padding: 35px;
+        color: #45777a;
+        border: red 3px solid;
+    }
+
+    .btn-mobile a{
+        text-decoration: none;
+        color: #45777a;
+        font-size: 19px;
+        background-color: whitesmoke;
+        opacity: 0,7;
+    }
+
+    .offcanvas-header{
+        background-color: whitesmoke;
+    }
+
+    .offcanvas-body{
+        background-color: whitesmoke;
+    }
+    
 }
