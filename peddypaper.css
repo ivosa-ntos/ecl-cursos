@@ -3,38 +3,60 @@
 }
 
 @media (max-width:440px) {
+
+    *{
+        overflow: hidden;
+    }
+
     body{
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 10px;
+        background-image: url(img/fundo-telemovel.jpg);
+        background-position: center;
         
     }
 
     .container-header{
         font-family: "Rubik Scribble", system-ui;
-        font-weight: 400;
         font-style: normal;
         margin-top: 30px;
         margin-bottom: 30px;
+        color: #918cbe;
+        text-shadow: 3px 3px 3px #5c54a7;
     }
 
     .container-body{
         text-align: center;
+        height: 70vh;
+    }
+
+    .container-body-btn{
+        background-color: transparent;
+        width: 100px;
+        height: 50px;
+        box-shadow: 3px 3px 3px #504d6d;
+        border: none;
+        margin-top: 50px;
+        color: #adc6fc;
     }
 
     .container-body a{
         text-decoration: none;
-        gap: 30px;
-        color: wheat;
-
+        font-size: 16px;
     }
 
     .container-qrcode{
-        box-shadow: 0 0 3px black;
+        box-shadow: 0 0 3px rgb(255, 255, 255);
         width: 120px;
         height: 120px;
         padding: 30px;
+    }
+
+    .container-footer{
+        padding: 30px;
+        color: #fff;
     }
 
 
