@@ -4,6 +4,38 @@
 
 @media (max-width:440px) {
     body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
         
     }
+
+    .container-header{
+        font-family: "Rubik Scribble", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .container-body{
+        text-align: center;
+    }
+
+    .container-body a{
+        text-decoration: none;
+        gap: 30px;
+        color: wheat;
+
+    }
+
+    .container-qrcode{
+        box-shadow: 0 0 3px black;
+        width: 120px;
+        height: 120px;
+        padding: 30px;
+    }
+
+
 }
