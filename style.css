@@ -283,7 +283,7 @@ nav li a{
         text-decoration: none;
         padding: 35px;
         color: #45777a;
-        border: red 3px solid;
+        border: transparent 3px solid;
     }
 
     .btn-mobile a{
