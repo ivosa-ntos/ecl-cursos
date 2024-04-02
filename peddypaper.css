@@ -10,12 +10,10 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
-    background-image: url(img/fundo-peddy-apper.jpg);
+    background-color: black;
+    background-image: url(img/psp.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    height: 100vh;
+    background-position: center top 112px;
     
 }
 
@@ -31,6 +29,7 @@ body{
 .container-body{
     text-align: center;
     height: 70vh;
+    margin-top: 90px;
 }
 
 .container-body-btn{
@@ -49,10 +48,11 @@ body{
 }
 
 .container-qrcode{
-    box-shadow: 0 0 3px rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px white; /* Sombra */
     width: 120px;
     height: 120px;
     padding: 30px;
+    border: transparent 6px solid;
 }
 
 .container-footer{
